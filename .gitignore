@@ -1,2 +1,7 @@
 .venv/
 *.mp4
+
+*.pt
+*.zip
+.venv/
+__pycache__/

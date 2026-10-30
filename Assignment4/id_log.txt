@@ -1,0 +1,6 @@
+Frame 1: new ID(s) [1, 2, 3, 4, 5] | visible now: [1, 2, 3, 4, 5]
+Frame 4: new ID(s) [6] | visible now: [1, 2, 3, 4, 5, 6]
+Frame 64: new ID(s) [8] | visible now: [1, 2, 4, 8]
+Frame 87: new ID(s) [9] | visible now: [1, 2, 4, 9]
+Frame 243: new ID(s) [13] | visible now: [1, 2, 4, 13]
+Frame 275: new ID(s) [15] | visible now: [1, 2, 4, 15]

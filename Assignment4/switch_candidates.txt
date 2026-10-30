@@ -1,0 +1,2 @@
+Frame 64: ID 3 -> 8 (gap 2 frames, distance 80px)
+Frame 87: ID 3 -> 9 (gap 25 frames, distance 125px)

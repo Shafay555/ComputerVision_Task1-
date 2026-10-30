@@ -1,0 +1,30 @@
+Task: Person Tracking:ID Switch Analysis
+
+Video: input.mp4
+Detector + Tracker: YOLOv8n + ByteTrack
+
+Tracker count (unique IDs): 10
+Manual count: 8
+Difference: 10 - 8 = 2
+
+Reason for difference:
+Tracker ne kuch logon ko ek se zyada IDs de di. Jab koi banda frame ke edge par
+door tha, to detector ka confidence gir gaya, track toot
+gaya aur wapis detect hone par nayi ID ban gayi.
+
+ID Switch Case:
+Frame: 64
+Old ID: 3  ->  New ID: 8
+Observation: Frame 61-62 mein left edge par ek banda (grey sweatshirt) ID 3 se
+track ho raha tha (confidence 0.85). Frame 63 mein wo aadha frame se bahar chala
+gaya aur detection gayab ho gayi. Frame 64 par wahi banda dobara detect hua to
+usay nayi ID 8 mil gayi (confidence sirf 0.42), aur unique count 6 se 7 ho gaya.
+Koi naya banda frame mein nahi aaya tha.
+
+
+Banda frame ke left edge par tha aur sirf aadha nazar aa raha tha (partial
+visibility), isliye detector ne ek frame miss kiya. Dobara detect hone par
+confidence kam tha (0.42), aur tracker ne usay purani ID 3 se match nahi kiya
+balki naya track ID 8 bana diya.
+
+Evidence files: output.mp4, id_log.txt, switch_candidates.txt, frame_61.png to frame_66.png
